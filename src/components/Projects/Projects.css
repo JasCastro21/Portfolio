@@ -1,0 +1,141 @@
+.projects-section {
+  background-color: #fceeee;
+  padding: 4rem 2rem;
+}
+
+.projects-title {
+  font-size: 2.5rem;
+  color: #e57d90;
+  margin-bottom: 2rem;
+  text-align: left;
+}
+
+.filter-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  justify-content: flex-start;
+}
+
+.filter-buttons button {
+  padding: 0.5rem 1.2rem;
+  border: 1px solid #e57d90;
+  background: transparent;
+  color: #e57d90;
+  font-weight: bold;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.filter-buttons button.active {
+  background-color: #e57d90;
+  color: white;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  justify-content: center;
+}
+
+.project-card {
+  background-color: transparent;
+  max-width: 350px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  color: #333;
+}
+
+.project-image {
+  width: 100%;
+  height: 260px;
+  background-color: #ccc;
+  border-radius: 16px;
+  position: relative;
+  overflow: hidden;
+}
+
+.tags {
+  position: absolute;
+  bottom: 0.8rem;
+  left: 0.8rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  z-index: 2;
+}
+
+.tag {
+  background-color: #fff;
+  font-size: 0.75rem;
+  padding: 0.3rem 0.6rem;
+  border-radius: 6px;
+  color: #333;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.project-content {
+  padding: 0.6rem 0.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.project-content h3 {
+  margin: 0;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.project-content p {
+  font-size: 0.85rem;
+  color: #444;
+}
+
+.project-links {
+  display: flex;
+  gap: 1rem;
+  margin-top: 0.6rem;
+  flex-wrap: wrap;
+}
+
+.project-links a {
+  flex: 1;
+  text-align: center;
+  padding: 0.4rem 1rem;
+  border: 1px solid #e57d90;
+  border-radius: 8px;
+  text-decoration: none;
+  color: #e57d90;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.project-links a:hover {
+  background-color: #e57d90;
+  color: white;
+}
+
+/* Responsividade extra no mobile */
+@media (max-width: 768px) {
+  .projects-title {
+    text-align: center;
+  }
+
+  .filter-buttons {
+    justify-content: center;
+  }
+
+  .projects-grid {
+    justify-content: center;
+  }
+
+  .project-card {
+    margin: 0 auto;
+  }
+}

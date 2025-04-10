@@ -1,0 +1,151 @@
+.hero-section {
+  padding: 4rem 2rem;
+  background-color: #fefefe;
+  color: #333;
+  display: flex;
+  justify-content: center;
+}
+
+.hero-content {
+  max-width: 1200px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 3rem;
+}
+
+.text-area {
+  flex: 1;
+  min-width: 300px;
+}
+
+.intro {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  color: #555;
+}
+
+.name {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #f17c94;
+  margin: 0;
+}
+
+.title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin: 1rem 0;
+}
+
+.description {
+  font-size: 1rem;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+  color: #444;
+}
+
+.description span {
+  font-weight: bold;
+  color: #f17c94;
+}
+
+.button-social-wrapper {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.buttons {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.btn {
+  padding: 0.8rem 1.5rem;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 1rem;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.btn.primary {
+  background-color: #f17c94;
+  color: white;
+  border: none;
+}
+
+.btn.primary:hover {
+  background-color: #e2657d;
+}
+
+.btn.outlined {
+  background-color: transparent;
+  color: #f17c94;
+  border: 2px solid #f17c94;
+}
+
+.btn.outlined:hover {
+  background-color: #f17c94;
+  color: white;
+}
+
+.socials {
+  display: flex;
+  gap: 1.2rem;
+}
+
+.inline-icons {
+  display: flex;
+  gap: 1rem;
+}
+
+.socials a svg {
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.socials a:hover svg {
+  color: #e2657d;
+  transform: scale(1.1);
+}
+
+.image-area {
+  flex: 1;
+  min-width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .hero-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .text-area {
+    align-items: center;
+  }
+
+  .buttons {
+    justify-content: center;
+  }
+
+  .button-social-wrapper {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .inline-icons {
+    justify-content: center;
+  }
+}

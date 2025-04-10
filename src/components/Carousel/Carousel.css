@@ -1,0 +1,75 @@
+.carousel-container {
+  width: 100%;
+  overflow: hidden;
+  padding: 24px 0;
+  background-color: #ffff;
+}
+
+.carousel-track {
+  display: flex;
+  gap: 50px;
+  width: max-content;
+  animation: scroll 30s linear infinite;
+}
+
+.carousel-icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80px;
+  flex-shrink: 0;
+}
+
+.logo-wrapper {
+  position: relative;
+  width: 60px;
+  height: 60px;
+}
+
+.gray-logo,
+.pink-logo {
+  position: absolute;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.gray-logo {
+  opacity: 1;
+  z-index: 1;
+}
+
+.pink-logo {
+  opacity: 0;
+  z-index: 2;
+}
+
+.carousel-icon.active .gray-logo {
+  opacity: 0;
+  transform: scale(1.1);
+}
+
+.carousel-icon.active .pink-logo {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+.logo-label {
+  margin-top: 8px;
+  font-size: 12px;
+  color: #aaa;
+  text-align: center;
+  font-family: sans-serif;
+  transition: color 0.3s ease;
+}
+
+.carousel-icon.active .logo-label {
+  color: #ffa8a8;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
